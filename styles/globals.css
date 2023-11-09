@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;400;800&display=swap');
+@import url(./inicio.css);
+
 body{
-    background-color: #09f;
+    background-color: var(--bg);
+    font-family: 'Encode Sans', sans-serif;
+}
+
+:root{
+    --bg: #FAFAFA;
+    --rosa: #EE3D8F;
+    --celeste: #37BBED;
+    --verde-lima: #D7DF23;
+    --verde: #50B8B1;
+    --morado: #9283BE;
+    --naranja: #F7941E;
+    --amarillo: #FFD100;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
 }
