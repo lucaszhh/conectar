@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;400;800&display=swap');
 @import url(./inicio.css);
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: var(--bg);
     font-family: 'Encode Sans', sans-serif;
@@ -15,6 +21,7 @@ body{
     --morado: #9283BE;
     --naranja: #F7941E;
     --amarillo: #FFD100;
+    --font: #0E0E0E;
 }
 
 ul{
