@@ -80,7 +80,8 @@ header ul li:nth-child(3) a{
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+    justify-content: space-evenly;
+    
 }
 .puertas img{
     height: 250px;
