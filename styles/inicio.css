@@ -47,16 +47,21 @@ header li a{
 }
 
 header ul li:nth-child(1) a{
-    background-color: var(--amarillo);
+    background-color: var(--morado);
 }
 
 
 header ul li:nth-child(2) a{
-    background-color: var(--naranja);
+    background-color: var(--celeste);
 }
 
 header ul li:nth-child(3) a{
-    background-color: var(--verde-lima);
+    background-color: var(--rosa);
+}
+
+main{
+    background-image: url(../logosConectar/fondoConectarLabHorizontal.png);
+    background-size: cover;
 }
 
 .title{
@@ -74,15 +79,29 @@ header ul li:nth-child(3) a{
 .puertas{
     display: flex;
     justify-content: center;
+    border: 4px solid var(--font);
+    width: 700px;
+    margin: 16px auto;
+    color: var(--bg);
+    background-color: var(--rosa);
+}
+
+.puertas.secundaria{
+    color: var(--font);
+    background-color: var(--celeste);
 }
 
 .puertas div{
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;   
 }
+
+.puertas div.info-end{
+    align-items: end;
+}
+
 .puertas img{
     height: 250px;
 }
