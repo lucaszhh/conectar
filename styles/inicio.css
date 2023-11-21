@@ -59,6 +59,19 @@ header ul li:nth-child(3) a{
     background-color: var(--rosa);
 }
 
+header ul li:nth-child(4) a{
+    background-color: var(--verde-lima);
+}
+
+header ul li:nth-child(5) a{
+    background-color: var(--verde);
+}
+
+header ul li:nth-child(6) a{
+    background-color: var(--amarillo);
+}
+
+
 main{
     background-image: url(../logosConectar/fondoConectarLabHorizontal.png);
     background-size: cover;
@@ -78,17 +91,36 @@ main{
 
 .puertas{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     border: 4px solid var(--font);
     width: 700px;
     margin: 16px auto;
+    padding: 16px;
+}
+
+.puertas:hover{
+    animation: cardColors 2s infinite;
+}
+
+.puertas:nth-child(2){
     color: var(--bg);
     background-color: var(--rosa);
 }
 
-.puertas.secundaria{
+
+.puertas:nth-child(3){
     color: var(--font);
     background-color: var(--celeste);
+}
+
+.puertas:nth-child(4){
+    color: var(--font);
+    background-color: var(--amarillo);
+}
+
+.puertas:nth-child(5){
+    color: var(--font);
+    background-color: var(--verde);
 }
 
 .puertas div{
@@ -105,3 +137,40 @@ main{
 .puertas img{
     height: 250px;
 }
+
+@keyframes cardColors {
+    0%,100%{
+        background-color: var(--verde);
+    }
+    15%{
+        background-color: var(--amarillo);
+    }   
+    30%{
+        background-color: var(--celeste);
+    }
+    45%{
+        background-color: var(--morado);
+    }
+    60%{
+        background-color: var(--naranja);
+    }
+    75%{
+        background-color: var(--rosa);
+    }
+    90%{
+        background-color: var(--verde-lima);
+    }
+}
+
+              
+.pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+  }

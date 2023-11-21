@@ -35,16 +35,12 @@ a{
 
 .btn{
     padding: 20px 40px;
-    background-color: var(--celeste);
     border: 4px solid;
     font-weight: 800;
     transition: all 200ms;
     cursor: pointer;
 }
 
-.btn-2{
-    background-color: var(--rosa);
-}
 
 .btn:hover{
     transform: translateY(-5px);
