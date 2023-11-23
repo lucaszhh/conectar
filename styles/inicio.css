@@ -1,4 +1,4 @@
-:root{
+:root {
     --bg: #FAFAFA;
     --rosa: #EE3D8F;
     --celeste: #37BBED;
@@ -8,88 +8,25 @@
     --naranja: #F7941E;
     --amarillo: #FFD100;
 }
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-header img{
-    width: 200px;
-}
-
-header nav{
-    width: 100%;
-}
-
-header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-header li{
-    width: 33.33%;
-    text-align: center;
-    transition: all 300ms;
-}
-
-header li:hover{
-    transform: translateY(-5px);
-    font-weight: 800;
-    box-shadow: 0px 5px;
-}
-
-header li a{
-    display: block;
-    padding: 20px;
-}
-
-header ul li:nth-child(1) a{
-    background-color: var(--morado);
-}
-
-
-header ul li:nth-child(2) a{
-    background-color: var(--celeste);
-}
-
-header ul li:nth-child(3) a{
-    background-color: var(--rosa);
-}
-
-header ul li:nth-child(4) a{
-    background-color: var(--verde-lima);
-}
-
-header ul li:nth-child(5) a{
-    background-color: var(--verde);
-}
-
-header ul li:nth-child(6) a{
-    background-color: var(--amarillo);
-}
-
-
-main{
+main {
     background-image: url(../logosConectar/fondoConectarLabHorizontal.png);
     background-size: cover;
 }
 
-.title{
+.title {
     text-align: center;
     padding: 16px;
     color: var(--morado);
     font-size: 40px;
-    text-shadow: -1px -1px 1px var(--font), 
-                1px 1px 1px var(--font), 
-                -1px 1px 1px var(--font), 
-                1px -1px 1px var(--font);
+    text-shadow: -1px -1px 1px var(--font),
+        1px 1px 1px var(--font),
+        -1px 1px 1px var(--font),
+        1px -1px 1px var(--font);
 }
 
 
-.puertas{
+.puertas {
     display: flex;
     justify-content: space-between;
     border: 4px solid var(--font);
@@ -98,79 +35,97 @@ main{
     padding: 16px;
 }
 
-.puertas:hover{
-    animation: cardColors 2s infinite;
+.puertas:hover {
+    animation: cardColors 5s infinite;
 }
 
-.puertas:nth-child(2){
+.puertas:nth-child(2) {
     color: var(--bg);
     background-color: var(--rosa);
 }
 
 
-.puertas:nth-child(3){
+.puertas:nth-child(3) {
     color: var(--font);
     background-color: var(--celeste);
 }
 
-.puertas:nth-child(4){
+.puertas:nth-child(4) {
     color: var(--font);
     background-color: var(--amarillo);
 }
 
-.puertas:nth-child(5){
+.puertas:nth-child(5) {
     color: var(--font);
     background-color: var(--verde);
 }
 
-.puertas div{
+.puertas div {
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: space-evenly;   
+    justify-content: space-evenly;
+    gap: 16px;
 }
 
-.puertas div.info-end{
+.puertas div.info-end {
     align-items: end;
 }
 
-.puertas img{
-    height: 250px;
+.puertas img {
+    width: 250px;
 }
 
 @keyframes cardColors {
-    0%,100%{
+
+    0%,
+    100% {
         background-color: var(--verde);
     }
-    15%{
+
+    15% {
         background-color: var(--amarillo);
-    }   
-    30%{
+    }
+
+    30% {
         background-color: var(--celeste);
     }
-    45%{
+
+    45% {
         background-color: var(--morado);
     }
-    60%{
+
+    60% {
         background-color: var(--naranja);
     }
-    75%{
+
+    75% {
         background-color: var(--rosa);
     }
-    90%{
+
+    90% {
         background-color: var(--verde-lima);
     }
 }
 
-              
-.pulse {
-    animation-name: pulse;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes pulse {
-    0% {transform: scale(1);}
-    50% {transform: scale(1.2);}
-    100% {transform: scale(1);}
-  }
+
+@media (max-width: 800px) {
+    .puertas{
+        flex-direction: column;
+        width: 300px;
+    }
+    .puertas div{
+        justify-content: center;
+        align-items: center;
+    }
+    .puertas img {
+        width: 100%;
+    }
+    .puertas div.info-end{
+        align-items: center;
+        align-self: center;
+    }
+    .puertas:nth-child(odd){
+        flex-direction: column-reverse;
+    }
+}
