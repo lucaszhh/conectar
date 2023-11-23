@@ -12,18 +12,11 @@
 main {
     background-image: url(../logosConectar/fondoConectarLabHorizontal.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.title {
-    text-align: center;
-    padding: 16px;
-    color: var(--morado);
-    font-size: 40px;
-    text-shadow: -1px -1px 1px var(--font),
-        1px 1px 1px var(--font),
-        -1px 1px 1px var(--font),
-        1px -1px 1px var(--font);
-}
+
 
 
 .puertas {
@@ -41,7 +34,7 @@ main {
 
 .puertas:nth-child(2) {
     color: var(--bg);
-    background-color: var(--rosa);
+    background-color: var(--verde);
 }
 
 
@@ -110,6 +103,10 @@ main {
 
 
 @media (max-width: 800px) {
+    main {
+
+        background-image: url(../logosConectar/fondoConectarLab.png);
+    }
     .puertas{
         flex-direction: column;
         width: 300px;

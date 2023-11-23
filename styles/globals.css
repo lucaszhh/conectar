@@ -57,3 +57,14 @@ a{
 .imagen-rotada{
     transform: scaleX(-1);
 }
+
+.title {
+    text-align: center;
+    padding: 16px;
+    color: var(--morado);
+    font-size: 40px;
+    text-shadow: -1px -1px 1px var(--font),
+        1px 1px 1px var(--font),
+        -1px 1px 1px var(--font),
+        1px -1px 1px var(--font);
+}
