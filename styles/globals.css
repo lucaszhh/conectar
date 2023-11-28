@@ -2,18 +2,18 @@
 @import url(./inicio.css);
 @import url(./header.css);
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--bg);
     font-family: 'Encode Sans', sans-serif;
 }
 
-:root{
+:root {
     --bg: #FAFAFA;
     --rosa: #EE3D8F;
     --celeste: #37BBED;
@@ -25,16 +25,16 @@ body{
     --font: #0E0E0E;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: unset;
 }
 
-.btn{
+.btn {
     padding: 20px 40px;
     border: 4px solid;
     font-weight: 800;
@@ -43,18 +43,18 @@ a{
 }
 
 
-.btn:hover{
+.btn:hover {
     transform: translateY(-5px);
-    font-weight: 800;       
+    font-weight: 800;
     box-shadow: 0px 5px;
 }
 
-.btn:active{
+.btn:active {
     transform: translateY(0px);
     box-shadow: 0px 0px;
 }
 
-.imagen-rotada{
+.imagen-rotada {
     transform: scaleX(-1);
 }
 
@@ -67,4 +67,75 @@ a{
         1px 1px 1px var(--font),
         -1px 1px 1px var(--font),
         1px -1px 1px var(--font);
+}
+
+.galery {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 16px;
+}
+
+.galery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galery article{
+    border: 4px solid var(--font);
+    background-color: var(--bg);
+}
+
+.galery article:nth-child(1),
+.galery article:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+.galery.streamers article:nth-child(7) {
+    background-color: var(--bg);
+    background-repeat: no-repeat;
+    background-image: url(../logosConectar/fondoConectarLab.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    & img{
+        width: 70%;
+        height: unset;
+    }
+}
+
+@media (max-width: 1150px) {
+    .galery {
+        padding: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .galery article:nth-child(1),
+    .galery article:nth-child(4) {
+        grid-column-start: span 1;
+    }
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.video div{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.video iframe{
+    border: 4px solid var(--font);
 }
