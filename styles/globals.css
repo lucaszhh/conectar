@@ -138,4 +138,13 @@ a {
 
 .video iframe{
     border: 4px solid var(--font);
+    width: 560px;
+    height: 315px;
+}
+
+@media (max-width: 600px) {
+    .video iframe{
+        width: 90%;
+        height: 250px;
+    }
 }
