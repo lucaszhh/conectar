@@ -37,6 +37,17 @@
 
 @media (max-width: 600px) {
     .footer img{
-        display: none;
+        order: 1;
     }
+
+    .footer{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer .btn{
+        width: 100%;
+
+    }
+
 }

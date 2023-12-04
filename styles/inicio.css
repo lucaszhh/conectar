@@ -39,8 +39,8 @@ main {
 
 
 .puertas:nth-child(3) {
-    color: var(--font);
-    background-color: var(--celeste);
+    color: var(--bg);
+    background-color: var(--morado);
 }
 
 .puertas:nth-child(4) {
