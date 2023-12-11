@@ -130,7 +130,7 @@ a {
     background-image: url(../images/weblab/3.jpg);
 }
 
-.galery article:nth-child(5) {
+.galery.weblab article:nth-child(5) {
 
     background-image: url(../images/weblab/4.jpg);
 }
@@ -139,7 +139,7 @@ a {
     background-image: url(../images/weblab/5.jpg);
 }
 
-.galery article:nth-child(8) {
+.galery.weblab article:nth-child(8) {
 
     background-image: url(../images/weblab/7.jpg);
 }
@@ -190,6 +190,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-column-start: span 1;
 }
 
 .galery.videojuego article img{
