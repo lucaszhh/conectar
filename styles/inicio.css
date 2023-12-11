@@ -34,18 +34,18 @@ main {
 
 .puertas:nth-child(2) {
     color: var(--bg);
-    background-color: var(--verde);
+    background-color: var(--celeste);
 }
 
 
 .puertas:nth-child(3) {
     color: var(--bg);
-    background-color: var(--morado);
+    background-color: var(--rosa);
 }
 
 .puertas:nth-child(4) {
     color: var(--font);
-    background-color: var(--amarillo);
+    background-color: var(--verde-lima);
 }
 
 .puertas:nth-child(5) {
@@ -68,6 +68,15 @@ main {
 .puertas img {
     width: 250px;
 }
+
+.puertas.weblab{
+    background-color: var(--verde-lima);
+}
+
+.puertas.weblab h2{
+    font-size: 40px;
+}
+
 
 @keyframes cardColors {
 
@@ -104,7 +113,6 @@ main {
 
 @media (max-width: 800px) {
     main {
-
         background-image: url(../logosConectar/fondoConectarLab.png);
     }
     .puertas{
@@ -172,6 +180,7 @@ section.contacto{
 @media (max-width: 700px) { 
     section.contacto{
         flex-direction: column;
+        border-width: 16px;
     }
     .contacto img{
         width: 80%;

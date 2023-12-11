@@ -94,7 +94,113 @@ a {
     grid-column-start: span 2;
 }
 
-.galery.streamers article:nth-child(7) {
+/* WEB LAB */
+.galery.weblab {
+    grid-template-rows: 400px;
+}
+
+.galery.weblab article{
+    transition: background-image 0.2s ease-in-out;
+    height: 400px;
+}
+.galery.weblab article:nth-child(1),
+.galery.weblab article:nth-child(4),
+.galery.weblab article:nth-child(5),
+.galery.weblab article:nth-child(8),
+.galery.weblab article:nth-child(9){
+    grid-column-start: span 2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.galery.weblab article:nth-child(1){
+    background-image: url(../images/weblab/1.png);
+}
+
+.galery.weblab article:nth-child(1):hover{
+    background-image: url(../images/weblab/1rm.png), url(../images/weblab/bg.gif);
+}
+
+.galery.weblab article:nth-child(4){
+    background-image: url(../images/weblab/2.jpg);
+}
+
+.galery.weblab article:nth-child(4):hover{
+    background-image: url(../images/weblab/3.jpg);
+}
+
+.galery article:nth-child(5) {
+
+    background-image: url(../images/weblab/4.jpg);
+}
+
+.galery.weblab article:nth-child(5):hover{
+    background-image: url(../images/weblab/5.jpg);
+}
+
+.galery article:nth-child(8) {
+
+    background-image: url(../images/weblab/7.jpg);
+}
+
+.galery.weblab article:nth-child(8):hover{
+    background-image: url(../images/weblab/8.jpg);
+}
+
+.galery.weblab article:nth-child(2) img,
+.galery.weblab article:nth-child(3) img,
+.galery.weblab article:nth-child(6) img,
+.galery.weblab article:nth-child(10) img{
+    object-fit: contain;
+    background-color: var(--bg);
+    background-repeat: no-repeat;
+    background-image: url(../logosConectar/fondoConectarLab.png);
+    background-size: cover;
+}
+
+.galery.weblab article:nth-child(7) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    background-repeat: no-repeat;
+    background-image: url(../logosConectar/fondoConectarLab.png);
+    background-size: cover;
+}
+
+.galery.weblab article:nth-child(7) img{
+    object-fit: contain;
+    width: 60%;
+}
+
+
+
+/* VISUALES */
+.galery.videojuego{
+    grid-template-rows: none;
+}
+
+.galery.videojuego article{
+    background-image: url(../images/visualesVideojuegos/bg.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galery.videojuego article img{
+    width: 80%;
+    height: 80%;
+}
+
+
+
+/* STREAMERS */
+.galery.streamers article:nth-child(7){
     background-color: var(--bg);
     background-repeat: no-repeat;
     background-image: url(../logosConectar/fondoConectarLab.png);
@@ -119,6 +225,39 @@ a {
     .galery article:nth-child(1),
     .galery article:nth-child(4) {
         grid-column-start: span 1;
+    }
+
+    .galery.weblab article:nth-child(1),
+    .galery.weblab article:nth-child(4),
+    .galery.weblab article:nth-child(5),
+    .galery.weblab article:nth-child(8),
+    .galery.weblab article:nth-child(9){
+        grid-column-start: span 1;
+    }
+
+/*     .galery.weblab article:nth-child(2),
+    .galery.weblab article:nth-child(6){
+        display: none;;
+    } */
+
+
+    .galery.weblab {
+        grid-template-rows: 200px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .galery.weblab article{
+       height: 200px;
+    }
+
+    .galery.weblab article:nth-child(4){
+        background-image: url(../images/weblab/3.jpg);
+    }
+    .galery.weblab article:nth-child(5){
+        background-image: url(../images/weblab/5.jpg);
+    }
+
+    .galery.weblab article:nth-child(8){
+        background-image: url(../images/weblab/8.jpg);
     }
 }
 
@@ -162,6 +301,7 @@ a {
     font-size: 60px;
     margin: 32px 0 0;
     padding: 64px 32px;
+    text-align: center;
 }
 
 .banner img{
