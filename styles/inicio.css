@@ -69,12 +69,23 @@ main {
     width: 250px;
 }
 
-.puertas.weblab{
+.puertas.weblab {
     background-color: var(--verde-lima);
 }
 
-.puertas.weblab h2{
+.puertas.weblab h2,
+.puertas.videojuego h2 {
     font-size: 40px;
+}
+
+.puertas.weblab button,
+.puertas.videojuego button {
+    font-size: 20px;
+}
+
+.puertas.videojuego {
+    background-color: var(--morado);
+    color: white;
 }
 
 
@@ -115,28 +126,33 @@ main {
     main {
         background-image: url(../logosConectar/fondoConectarLab.png);
     }
-    .puertas{
+
+    .puertas {
         flex-direction: column;
         width: 300px;
     }
-    .puertas div{
+
+    .puertas div {
         justify-content: center;
         align-items: center;
     }
+
     .puertas img {
         width: 100%;
     }
-    .puertas div.info-end{
+
+    .puertas div.info-end {
         align-items: center;
         align-self: center;
     }
-    .puertas:nth-child(odd){
+
+    .puertas:nth-child(odd) {
         flex-direction: column-reverse;
     }
 }
 
 
-section.contacto{
+section.contacto {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -149,11 +165,11 @@ section.contacto{
     margin: 100px auto;
 }
 
-.contacto img{
+.contacto img {
     width: 40%;
 }
 
-.contacto-info{
+.contacto-info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,34 +177,68 @@ section.contacto{
     gap: 20px;
 }
 
-.contacto-info div{
+.contacto-info div {
     display: flex;
     gap: 20px;
 }
 
-.contacto-info i{
+.contacto-info i {
     font-size: 100px;
 }
 
-.celeste{
+.celeste {
     color: var(--celeste);
 }
-.rosado{
+
+.rosado {
     color: var(--rosa);
 }
 
-@media (max-width: 700px) { 
-    section.contacto{
+@media (max-width: 700px) {
+    section.contacto {
         flex-direction: column;
         border-width: 16px;
     }
-    .contacto img{
+
+    .contacto img {
         width: 80%;
     }
-    .contacto-info i{
+
+    .contacto-info i {
         font-size: 60px;
     }
-    section.contacto{
+
+    section.contacto {
         padding: 10px;
     }
+}
+
+.carruselVertical .swiper{
+    width: 450px;
+    height: 900px;
+    
+}
+
+.swiper {
+    width: 900px;
+    height: 450px;
+    margin-bottom: 80px;
+    border: solid var(--font) 4px;
+    --swiper-theme-color: var(--rosa);
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
