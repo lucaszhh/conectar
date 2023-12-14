@@ -206,7 +206,13 @@ a {
 
 
 /* AUDIOVISUAL */
-.galery.streamers article:nth-child(7){
+.galery.streamers article:nth-child(5){
+    grid-column-start: span 3;
+}
+
+
+.galery.streamers article:nth-child(6),
+.galery.streamers article:nth-child(8){
     background-color: var(--bg);
     background-repeat: no-repeat;
     background-image: url(../logosConectar/fondoConectarLab.png);
@@ -263,6 +269,14 @@ a {
     .galery {
         padding: 30px;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .galery.streamers article:nth-child(5){
+        grid-column-start: span 1;
+    }
+
+    .galery.streamers article:nth-child(6){
+        display: none;
     }
 
     .galery article:nth-child(1),
