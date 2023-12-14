@@ -55,6 +55,11 @@ a {
     box-shadow: 0px 0px;
 }
 
+.btn:disabled:hover{
+    transform: translateY(0px);
+    box-shadow: 0px 0px;
+}
+
 .imagen-rotada {
     transform: scaleX(-1);
 }
@@ -217,7 +222,44 @@ a {
     }
 }
 
+/* ELECTRONICA */
+.galery.electronica{
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.galery.electronica article{
+    grid-column-start: span 1;
+
+}
+
+.galery.electronica article:nth-child(5),
+.galery.electronica article:nth-child(6),
+.galery.electronica article:nth-child(6),
+.galery.electronica article:nth-child(10),
+.galery.electronica article:nth-child(11),
+.galery.electronica article:nth-child(8){
+    grid-column-start: span 2;
+}
+.galery.electronica article:nth-child(13){
+    grid-column-start: span 3;
+}
+
+
+.galery.electronica article:nth-child(7) img,
+.galery.electronica article:nth-child(9) img,
+.galery.electronica article:nth-child(12) img{
+    object-fit: contain;
+    background-color: var(--bg);
+    background-repeat: no-repeat;
+    background-image: url(../logosConectar/fondoConectarLab.png);
+    background-size: cover;
+}
+
+
+
 @media (max-width: 1150px) {
+
     .galery {
         padding: 30px;
         grid-template-columns: repeat(1, 1fr);
@@ -228,6 +270,11 @@ a {
         grid-column-start: span 1;
     }
 
+    .galery.electronica{
+        display: flex;
+        flex-direction: column;
+    }
+
     .galery.weblab article:nth-child(1),
     .galery.weblab article:nth-child(4),
     .galery.weblab article:nth-child(5),
@@ -236,13 +283,13 @@ a {
         grid-column-start: span 1;
     }
 
-/*     .galery.weblab article:nth-child(2),
+    .galery.weblab article:nth-child(2),
     .galery.weblab article:nth-child(6){
         display: none;;
-    } */
+    }
 
 
-    .galery.weblab {
+    .galery.weblab, .galery.electronica {
         grid-template-rows: 200px;
         grid-template-columns: repeat(1, 1fr);
     }

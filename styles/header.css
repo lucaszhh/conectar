@@ -60,7 +60,7 @@ header ul li:nth-child(5) a{
 }
 
 header ul li:nth-child(6) a{
-    background-color: var(--amarillo);
+    background-color: var(--naranja);
 }
 
 @media (max-width: 1150px) {

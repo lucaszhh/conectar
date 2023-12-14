@@ -53,6 +53,11 @@ main {
     background-color: var(--verde);
 }
 
+.puertas:nth-child(6) {
+    color: var(--bg);
+    background-color: var(--naranja);
+}
+
 .puertas > div {
     display: flex;
     flex-direction: column;
@@ -70,7 +75,9 @@ main {
 }
 
 .puertas.weblab {
-    background-color: var(--verde-lima);
+    background-color: none;
+    animation: cardColors 5s infinite;
+    color: white;
 }
 
 .puertas.weblab h2,
@@ -157,6 +164,14 @@ main {
 
     .puertas:nth-child(odd) {
         flex-direction: column-reverse;
+    }
+    .puertas.audiovisual .btns{
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+    .puertas.audiovisual .btns button{
+        width: 100%;
     }
 }
 
@@ -250,4 +265,15 @@ section.contacto {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .swiper{
+        width: 80%;
+        height: 250px;
+    }
+    .carruselVertical .swiper{
+        width: 80%;
+        height: 400px;
+    }
 }
