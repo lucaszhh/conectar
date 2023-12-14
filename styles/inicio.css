@@ -184,7 +184,6 @@ section.contacto {
     margin: auto;
     width: 80%;
     border: dotted 24px var(--font);
-    border-radius: 10px;
     padding: 10px 30px;
     margin: 100px auto;
 }
